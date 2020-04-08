@@ -3,27 +3,33 @@
 Question: What is the number of merged code changes/number of abandoned code change requests?
 
 ## Description
-A description of what the metric is and what it captures.
-The first few sentences should match the description in the [metrics list](../activity-metrics-list.md).
+When the project uses the code review process, the changes can not be directly carried out, we need to discuss the new code changes / abandoned code. Each of these suggestions is intended to be reviewed by other developers, and anyone may propose improvements until the review is passed. Some source code will be replaced or deleted. You need to know the number of changes to these merged codes to quantify the activeness of the proposer.
 
 ## Objectives
-Answer the question for why someone wants to measure this metric and what can be known with it.
+Calculate the amount of changes proposed by the project
+Learn the activity index of each participant by calculating comments to change the code in the corresponding repository.
+Of course, the metrics of the review is not the only metrics to evaluate the degree of activity.
 
 ## Implementation
-Provide details on how to measure the metric, collect the data, and analyze it. The following sub-headings are optional but help to structure the different aspects of implementation.
+**Aggregators:**
+* Count. Total number of changes during the period.
+
+**Parameters:**
+* Period of time. Start and finish date of the period. Default: forever.
+ Period during which changes are considered.
+* Criteria for source code. Algorithm. Default: all files are source code.
+ If focused on source code, criteria for deciding whether a file is a part of the source code or not.
 
 ### Filters (optional)
-Include a Filter
+TBD
 
 ### Visualizations (optional)
-Include visualizations such as screenshot of the metric. There may be many more visualizations for this metric, we only want to provide a flavor for what this metric is about.
+TBD
 
 ### Tools Providing the Metric (optional)
-Metric must be currently deployed/available, in contrast to a tool having the "potential" to provide the metric. Provide direct link to implementation/documentation, if applicable
+TBD
 
 ### Data Collection Strategies (Optional)
-If there are several different ways to collect data for this metric, list them here. 
-This may include expressing a metric in different ways.
-
+TBD
 ## References
 Blog posts, websites, academic papers, or books that mention the metric and provide more background.
